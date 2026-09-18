@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="clayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="40%" stop-color="#E65100" />
+      <stop offset="100%" stop-color="#7A2207" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D32F2F" />
+      <stop offset="30%" stop-color="#FF5722" />
+      <stop offset="70%" stop-color="#FFEB3B" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Base Stand -->
+  <path d="M38 86 L62 86 C64 86 65 89 63 91 L60 93 L40 93 L37 91 C35 89 36 86 38 86 Z" fill="#7A2207" stroke="#FFD700" stroke-width="1"/>
+  <!-- Diya Body -->
+  <path d="M15 62 C15 78 30 86 50 86 C70 86 85 78 85 62 C85 60 78 58 50 58 C22 58 15 60 15 62 Z" fill="url(#clayGrad)" stroke="#FFD700" stroke-width="1.5"/>
+  <ellipse cx="50" cy="62" rx="30" ry="6" fill="#5D1804" opacity="0.6"/>
+  <!-- Flame Core and Aura -->
+  <circle cx="50" cy="40" r="16" fill="#FF9800" opacity="0.25" filter="url(#flameGlow)"/>
+  <path d="M50 18 C46 26 40 34 40 42 C40 50 44 54 50 54 C56 54 60 50 60 42 C60 34 54 26 50 18 Z" fill="url(#flameGrad)" filter="url(#flameGlow)"/>
+  <path d="M50 28 C48 33 45 37 45 42 C45 47 47 50 50 50 C53 50 55 47 55 42 C55 37 52 33 50 28 Z" fill="#FFFDE7"/>
+</svg>
