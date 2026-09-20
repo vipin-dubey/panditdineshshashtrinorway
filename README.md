@@ -13,7 +13,7 @@ A modern, culturally authentic, bilingual (English & Hindi) static website for *
   4. **Vedic Astrology**: Janam Kundali making (D1 & D9 Navamsha), 36 Gun Milan for marriage, Manglik Dosha analysis, and Nordic latitude Muhurat calculations.
 - **Bilingual Support (English Default & Hindi)**: Instant real-time language switcher (`EN | हिन्दी`) without page reload, saved in `localStorage`.
 - **Inquiry & Booking Form**:
-  - Sends booking requests to **`dineshshashtri82@gmail.com`** via FormSubmit AJAX.
+  - Sends booking requests to **`dineshshastri82@gmail.com`** via FormSubmit AJAX.
   - Dynamic fields: Automatically reveals birth details (Date of Birth, Time of Birth, Place of Birth) when Astrology/Kundali services are chosen.
   - Direct WhatsApp fallback button generating a formatted booking message to **`+47 97335299`**.
 - **Legal Compliance Pages**:
